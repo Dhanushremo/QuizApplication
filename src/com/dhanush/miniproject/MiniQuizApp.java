@@ -2392,34 +2392,34 @@ class QuizDemo {
 	}
 }
 
-public class MiniQuizApp {
-	public static void main(String[] args) {
-		QuizDemo qd = null;
-		Quiz q = null;
-		try {
-			q = new Quiz();
-			q.user();
-			qd = new QuizDemo();
-			qd.init();
-		} catch (Throwable e) {
-			e.printStackTrace();
-			System.out.println("INVALID!! The REASON " + e);
-			System.out.println("Re-Attend the QUIZ OnceAgain");
-			try {
-				q.user();
-				qd.init();
-			} catch (Throwable e1) {
-				System.out.println("INVALID!! The REASON " + e);
-				System.out.println("Re-Attend the QUIZ OnceAgain");
-				try {
-					q.user();
-					qd.init();
-				} catch (Throwable e2) {
-					System.out.println("INVALID!! The REASON " + e);
-					System.out.println("YOU ARE CROSSED THE LIMITS");
-					System.out.println("YOU ARE BLOCKED");
-				}
-			}
-		}
-	}
-}
+//public class MiniQuizApp {
+//	public static void main(String[] args) {
+//		QuizDemo qd = null;
+//		Quiz q = null;
+//		try {
+//			q = new Quiz();
+//			q.user();
+//			qd = new QuizDemo();
+//			qd.init();
+//		} catch (Throwable e) {
+//			e.printStackTrace();
+//			System.out.println("INVALID!! The REASON " + e);
+//			System.out.println("Re-Attend the QUIZ OnceAgain");
+//			try {
+//				q.user();
+//				qd.init();
+//			} catch (Throwable e1) {
+//				System.out.println("INVALID!! The REASON " + e);
+//				System.out.println("Re-Attend the QUIZ OnceAgain");
+//				try {
+//					q.user();
+//					qd.init();
+//				} catch (Throwable e2) {
+//					System.out.println("INVALID!! The REASON " + e);
+//					System.out.println("YOU ARE CROSSED THE LIMITS");
+//					System.out.println("YOU ARE BLOCKED");
+//				}
+//			}
+//		}
+//	}
+//}
